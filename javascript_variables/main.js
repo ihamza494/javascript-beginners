@@ -1,8 +1,5 @@
 /*const UserName= prompt("Enter User Name : ");
-const Password = prompt("Enter Your Password:");*/
-const num1 = parseInt( prompt("First number"));
-const num2 = parseInt(prompt("Enter second number:"));
-const operator = prompt("Enter Operator: ")
+
 
 /*if (UserName == "ihamza494" &&  Password == "FASTflex2018")
 {
@@ -38,22 +35,48 @@ const subtraction = (firstNumber, secondNumber) =>{
   return result;
 }
 let resultS;
-if(operator == '+'){
-  resultS = sum(num1, num2);
+
+
+const main =() => {
+  const Password = prompt("Enter Your Password:");
+  const num1 = parseInt( prompt("First number"));
+  if (isNaN(num1)){
+    alert(`This is invalid number : ${num1}`);
+    return
+  }
+  const num2 = parseInt(prompt("Enter second number:"));
+
+  if (isNaN(num2)){
+    alert(`This is invalid number : ${num2}`);
+    return
+  }
+  const operator = prompt("Enter Operator: ")
+
+  if(operator == '+'){
+    resultS = sum(num1, num2);
+    
+  }
+  else if(operator == '-'){
+    resultS = subtraction(num1, num2);
+    
+  }
+  else if(operator == '*'){
+    resultS = multiply(num1, num2);
+    
+  }
+  else if(operator == '/'){
+    resultS = division(num1, num2);
+    
+  }
+  else{
+      alert(`This is invalid operator : ${operator}`);
+      return
+  }
+  //document.writeln(resultS)
+  document.write(`${num1} ${operator} ${num2} = ${resultS}`)
   
+
 }
-else if(operator == '-'){
-  resultS = subtraction(num1, num2);
-  
-}
-else if(operator == '*'){
-  resultS = multiply(num1, num2);
-  
-}
-else if(operator == '/'){
-  resultS = division(num1, num2);
-  
-}
-//document.writeln(resultS)
-document.write(`${num1} ${operator} ${num2} = ${resultS}`)
+
+main();
 
