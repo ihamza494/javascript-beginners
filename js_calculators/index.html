@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css"/>
+    
+</head>
+<body>
+    <h1>JS Calculator</h1>
+    <div class="calculator">
+        <div class="calculator_Output">
+            <div class="calculator_Output_Accumulator"></div>
+            <div class="calculator_Output_Display"></div>
+        </div>
+        <div class="calculator_Input">
+            <div class="calculator_Input_Btn" onclick="clear_Cal()">AC</div>
+            <div class="calculator_Input_Btn" onclick="dlt_Btn()">Del</div>
+            <div class="calculator_Input_Btn">%</div>
+            <div class="calculator_Input_Btn" onclick="operator_Pressed('/')">/</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('7')">7</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('8')">8</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('9')">9</div>
+            <div class="calculator_Input_Btn" onclick="operator_Pressed('*')">X</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('4')">4</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('5')">5</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('6')">6</div>
+            <div class="calculator_Input_Btn" onclick="operator_Pressed('+')">+</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('1')">1</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('2')">2</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('3')">3</div>
+            <div class="calculator_Input_Btn" onclick="operator_Pressed('-')">-</div>
+            <div class="calculator_Input_Btn">FS</div>
+            <div class="calculator_Input_Btn" onclick="digit_Pressed('0')">0</div>
+            <div class="calculator_Input_Btn">.</div>
+            <div class="calculator_Input_Btn " id="equalBtn" onclick="equal_Pressed()">=</div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
