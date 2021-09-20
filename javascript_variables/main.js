@@ -74,7 +74,7 @@ const main =() => {
   }
   //document.writeln(resultS)
   document.write(`${num1} ${operator} ${num2} = ${resultS}`)
-  
+  document.write("Byee Byee")
 
 }
 
